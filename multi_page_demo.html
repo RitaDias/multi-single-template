@@ -118,8 +118,8 @@
       display: flex;
       flex-direction: column;
       padding: 26px 0;
-      position: fixed;
-      top: 0px;
+      position: sticky;
+      top: 0;
       width: 100%;
       z-index: 60;
     }
@@ -146,11 +146,13 @@
     }
 
     .muse-selection {
-      display: grid;
-      grid-template-columns: repeat(7, 13.8% [col-start]);
-      grid-gap: 3px;
+      align-items: center;
+      background: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      height: 174px;
       margin-top: 20px;
-      max-height: 166px;
+      width: 583px;
       overflow-y: scroll;
     }
 
@@ -168,12 +170,15 @@
       opacity: 1;
     }
 
+    .muse-picker {
+      margin-right: 2px;
+    }
+
     /* bio sections */
     .bio-section {
       left: 50%;
       max-width: 880px;
       position: relative;
-      top: 289px;
       transform: translateX(-50%);
     }
 
@@ -216,13 +221,13 @@
       max-height: 400px;
       max-width: 280px;
       position: sticky;
-      top: 289px;
+      top: 300px;
       width: auto;
     }
 
     .bio-navigation {
       position: sticky;
-      top: 289px;
+      top: 300px;
       z-index: 10;
     }
 
