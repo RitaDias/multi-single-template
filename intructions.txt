@@ -1,0 +1,42 @@
+💀💀💀💀
+
+Instructions for Multi Muse
+
+HOW TO ADD MUSES:
+    1. Add an icon to the muse selection.
+        1.1 You can find it easily if you search for 'muse icon starts'
+        1.2 Copy from where it reads 'muse icon starts' to 'muse icon ends'
+        1.3 Paste it at the end of the list
+        1.4 Each link has a 'data-tab' (for example: data-tab="tab1")
+        1.5 Change the 'data-tab' of the one that you just pasted to something unique (for example: <img data-tab="tab15" ...>)
+
+    2. Each section will be listed with a comment 'muse 1 starts' until 'muse 1 ends'.
+        2.1 Copy from where it reads 'muse 1 starts' to 'muse 1 ends'
+        2.2 Paste it at the end of the list
+        2.3 Each tab will have an id (<div id="tab1" ) 2.4 Change the id of the tab that you just pasted to the same that you've
+        written in the previous step (<div id="tab15" ...>)
+
+    3. Each subtab will be listed with a comment
+    1st tab - overview starts -> 1st tab - overview ends
+    2nd tab - biography starts -> 2nd tab - biography ends
+    3rd tab - verses starts -> 3rd tab - verses ends
+    4th tab - people of note starts -> 4th tab - people of note ends
+
+        3.1 Each of the subtabs them has an id (<div id="tab1a" ) 
+		3.2 You need to change the id to the number that you've picked on the previous step (div id="tab15a" ) 
+
+    4. You have a navigation (black bar) in each character tab for overview, biography, verses and people of
+        interest.
+        4.1 Each link inside of the navigation has a 'data-tab' (for example: <a data-tab="tab1a" ) 
+        4.2 Change the 'data-tab' number to match the number that you have used, it needs to be unique 
+            (for example: <div data-tab="tab15a" ...> ...</div>
+                <div data-tab="tab15b" ...> ...)
+
+HOW TO REMOVE LINKS FROM CHARACTER NAVIGATION (black bar)
+    0. DON'T remove the overview the tab that will always have 'a'. (for example: <div data-tab"=tab1a">)
+    1. You will see a section with the comment 'sub menu with links'
+    2. Remove elements that have the number and letter that you want removed
+        (for example: <div data-tab="tab1b">...</div>)
+    3. Remove the subtab that has the same id.
+        3.1 Search 'id=tab1b' and delete from where it reads '2nd tab - biography starts' until '2nd tab - biography
+        ends'
